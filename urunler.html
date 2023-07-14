@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ürünler</title>
+    <style>
+      /* style.css */
+
+      body {
+        background-color: #12078c;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        margin: 5;
+        padding: 5;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/home.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .container {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .navbar img {
+        height: 7rem;
+      }
+
+      .navbar {
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        column-gap: 20px;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease 0.3s;
+        font-size: 20px;
+      }
+
+      nav ul li a:hover {
+        color: #000;
+      }
+
+      .logo {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #fff;
+        line-height: 20px;
+      }
+
+      .content li {
+        font-size: 25px;
+        color: #fff;
+      }
+
+      .btn-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+      }
+
+      .btn {
+        padding: 12px 45px;
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 30px;
+        cursor: pointer;
+        color: #ffff;
+        background-color: #8e0a0a;
+        border-radius: 20px;
+        border: 1px solid #0a1064;
+        text-decoration: none;
+        transition: ease 0.3s;
+        width: 200px;
+        height: 60px;
+        bottom: 40px;
+        right: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn:hover {
+        background-color: #000;
+        color: #fff;
+        border-color: #fff;
+      }
+
+      .btn::after {
+        content: "\f178";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 5px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Responsive tasarım için */
+
+      @media only screen and (min-width: px) {
+        body {
+        background-color: #12078c;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        margin: 5;
+        padding: 5;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/home.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .container {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .navbar img {
+        height: 25rem;
+      }
+
+      .navbar {
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        column-gap: 20px;
+      }
+
+      nav ul li {
+        margin-right: 35px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease 0.3s;
+        font-size: 60px;
+      }
+
+      nav ul li a:hover {
+        color: #000;
+      }
+
+      .logo {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      .logo img {
+        height: 60px;
+      }
+
+      p {
+        font-size: 60px;
+        color: #fff;
+        line-height: 65px;
+      }
+
+      .content li {
+        font-size: 75px;
+        color: #fff;
+      }
+
+      .btn-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+      }
+
+      .btn {
+        padding: 12px 45px;
+        font-size: 100px;
+        font-weight: 700;
+        margin-top: 30px;
+        cursor: pointer;
+        color: #ffff;
+        background-color: #8e0a0a;
+        border-radius: 20px;
+        border: 1px solid #0a1064;
+        text-decoration: none;
+        transition: ease 0.3s;
+        width: 800px;
+        height: 200px;
+        bottom: 40px;
+        right: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn:hover {
+        background-color: #000;
+        color: #fff;
+        border-color: #fff;
+      }
+
+      .btn::after {
+        content: "\f178";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 5px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+
+        .btn-container {
+          justify-content: center;
+          margin-top: 20px;
+
+          .btn {
+            font-size: 16px; /* Örneğin, butonun küçültülmüş font boyutu */
+            width: 160px; /* Örneğin, butonun küçültülmüş genişliği */
+            height: 48px; /* Örneğin, butonun küçültülmüş yüksekliği */
+          }
+
+          .content li {
+            font-size: 16px; /* Örneğin, yazıların küçültülmüş font boyutu */
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar">
+      <a href="index.html">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">ANASAYFA</a></li>
+          <li><a href="#">HAKKINDA</a></li>
+          <li><a href="#">İLETİŞİM</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+    <div class="container">
+      <div class="content">
+        <h1>ÜRÜNLER</h1>
+        <p>
+          İmalatını yaptığımız parçalarla Dünya'nın her noktasına hizmet
+          veriyoruz.
+        </p>
+        <ul>
+          <li>Çimento</li>
+          <p>
+            Dünya’da ve ülkemizde bir çok farklı çimento firmasıyla çalışan
+            Kardökmak A.Ş. uzun yıllara dayanan sektördeki deneyimiyle
+            sürdürülebilir çözümler üretmektedir.
+          </p>
+          <li>Demir Çelik</li>
+          <p>
+            Ülke tarihinde demir çelik sektörünün ilk adımlarının atıldığı
+            Kardemir’in bir iştiraki olan firmamız, Türkiye’de ve Dünya’da demir
+            çelik sektöründe öncü firmaların taleplerinin yarım asırdan fazla
+            bir süredir karşılamaya devam etmektedir.
+          </p>
+          <li>Enerji</li>
+          <p>
+            Kardökmak A.Ş. rüzgar türbini mekanik parçalarının imalatına
+            odaklanarak kendi üretim kapsamında enerji sektörünün payını
+            artırmayı planlamaktadır. Elektrik üretiminde pay sahibi olarak hem
+            ülke hem de Dünya ekonomisine katkı sağlamayı hedeflemektedir.
+          </p>
+          <li>Maden</li>
+          <p>
+            Tıpkı demir çelik sektöründe olduğu gibi geçmişten bu zamana
+            Türkiye’de maden sektörüne çözümlere sunan firmamız adjustment ring,
+            clamping ringler, main frameler ve headler imal etmektedir.
+          </p>
+        </ul>
+      </div>
+      <div class="buton">
+        <a href="urun.resimleri.html" class="btn"> Ürünleri Gör </a>
+      </div>
+    </div>
+  </body>
+</html>
