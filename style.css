@@ -28,9 +28,9 @@ body {
 }
 
 p {
-  font-size: 10px;
+  font-size: 15px;
   color: #fff;
-  line-height: 16px;
+  line-height: 17px;
 }
 
 .btn {
@@ -105,7 +105,9 @@ h1 {
 }
 
 .desc {
-  font-size: 16px;
+  font-size: 25px;
+  line-height: 30px;
+
 }
 
 .cards {
