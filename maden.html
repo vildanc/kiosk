@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Demir Çelik</title>
+    <style>
+      body {
+        margin: 25px 40px;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(27, 43, 129);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .left-images,
+      .right-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+
+      h1 {
+        color: #e31616;
+        font-size: 40px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .image {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 550px;
+        height: 145px;
+      
+      }
+
+      .navbar {
+        height: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .navbar .btnn a {
+        margin-left: -50px;
+        font-size: xx-large;
+        color: #fff;
+        position: relative;
+        top: 5px; /* İstenilen hizaya göre değeri ayarlayın */
+      }
+
+      .navbar img {
+        height: 5rem;
+        margin-right: 600px; /* İstenilen hizaya göre değeri ayarlayın */
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        column-gap: 20px;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease 0.3s;
+        font-size: 20px;
+      }
+
+      nav ul li a:hover {
+        color: #000;
+      }
+
+      .logo {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar">
+      <div class="btnn">
+        <a href="urunler.html"
+          ><i class="fa-solid fa-arrow-left" style="font-size: larger"></i
+        ></a>
+      </div>
+      <img src="./images/logo.png" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">ANASAYFA</a></li>
+          <li><a href="#">HAKKINDA</a></li>
+          <li><a href="#">İLETİŞİM</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <body>
+        <div class="container">
+            <div class="left">
+                <h1>Sektör: Enerji</h1>
+                <img
+          class="image"
+          src="./images/maden ve makina/maden-parca.png"
+          
+        />
+        <img
+          class="image"
+          src="./images/maden ve makina/maden-parca2.png"
+         
+        />
+        <img
+        class="image"
+        src="./images/maden ve makina/maden-parca3.png"
+       
+      />
+                
+            </div>
+            <div class="right">
+                <h1>Sektör: Denizcilik</h1>
+                <img
+          class="image"
+          src="./images/maden ve makina/makina-parca1.png"
+         
+        />
+
+        <img
+        class="image"
+        src="./images/maden ve makina/makina-parca2.png"
+       
+      />
+      
+              
+            </div>
+        </div>
+    </body>
+    </html>

@@ -19,8 +19,8 @@
         overflow: hidden;
         height: 100vh;
         width: 100%;
-        margin: 5;
-        padding: 5;
+        margin: 5px;
+        padding: 5px;
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
@@ -69,6 +69,12 @@
         color: #000;
       }
 
+      h1 {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+
       .logo {
         text-align: left;
         margin-bottom: 10px;
@@ -82,6 +88,7 @@
         font-size: 20px;
         color: #fff;
         line-height: 20px;
+        margin-top: 7px;
       }
 
       .content li {
@@ -92,12 +99,11 @@
       .btn-container {
         display: flex;
         justify-content: flex-end;
-        margin-top: 30px;
       }
 
       .btn {
         padding: 12px 45px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 30px;
         cursor: pointer;
@@ -107,14 +113,16 @@
         border: 1px solid #0a1064;
         text-decoration: none;
         transition: ease 0.3s;
-        width: 200px;
-        height: 60px;
+        width: 250px;
+        height: 80px;
         bottom: 40px;
         right: 20px;
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        margin-top: 20px;
+        margin-right: 50px;
       }
 
       .btn:hover {
@@ -137,128 +145,130 @@
 
       /* Responsive tasarım için */
 
-      @media only screen and (min-width: px) {
+      @media only screen and (min-width: 2000px) {
         body {
-        background-color: #12078c;
-        overflow: hidden;
-        height: 100vh;
-        width: 100%;
-        margin: 5;
-        padding: 5;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-          ),
-          url(./images/home.jpg);
-        background-size: cover;
-        background-position: center;
-      }
+          background-color: #12078c;
+          overflow: hidden;
+          height: 100vh;
+          width: 100%;
+          margin: 5;
+          padding: 5;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url(./images/home.jpg);
+          background-size: cover;
+          background-position: center;
+        }
 
-      .container {
-        padding-left: 6%;
-        padding-right: 6%;
-      }
+        .container {
+          padding-left: 6%;
+          padding-right: 6%;
+        }
 
-      .navbar img {
-        height: 25rem;
-      }
+        .navbar img {
+          height: 25rem;
+        }
 
-      .navbar {
-        height: 15%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 6%;
-        padding-right: 6%;
-      }
+        .navbar {
+          height: 15%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 6%;
+          padding-right: 6%;
+        }
 
-      nav ul {
-        list-style: none;
-        display: flex;
-        column-gap: 20px;
-      }
+        nav ul {
+          list-style: none;
+          display: flex;
+          column-gap: 20px;
+        }
 
-      nav ul li {
-        margin-right: 35px;
-      }
+        nav ul li {
+          margin-right: 35px;
+        }
 
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        transition: ease 0.3s;
-        font-size: 60px;
-      }
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          transition: ease 0.3s;
+          font-size: 60px;
+        }
 
-      nav ul li a:hover {
-        color: #000;
-      }
+        nav ul li a:hover {
+          color: #000;
+        }
 
-      .logo {
-        text-align: left;
-        margin-bottom: 10px;
-      }
+        .logo {
+          text-align: left;
+          margin-bottom: 10px;
+        }
 
-      .logo img {
-        height: 60px;
-      }
+        .logo img {
+          height: 60px;
+        }
 
-      p {
-        font-size: 60px;
-        color: #fff;
-        line-height: 65px;
-      }
+        p {
+          font-size: 60px;
+          color: #fff;
+          line-height: 65px;
+        }
 
-      .content li {
-        font-size: 75px;
-        color: #fff;
-      }
+        .content li {
+          font-size: 75px;
+          color: #fff;
+        }
 
-      .btn-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 20px;
-      }
+        .btn-container {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 20px;
+          flex-direction: row;
+        }
 
-      .btn {
-        padding: 12px 45px;
-        font-size: 100px;
-        font-weight: 700;
-        margin-top: 30px;
-        cursor: pointer;
-        color: #ffff;
-        background-color: #8e0a0a;
-        border-radius: 20px;
-        border: 1px solid #0a1064;
-        text-decoration: none;
-        transition: ease 0.3s;
-        width: 800px;
-        height: 200px;
-        bottom: 40px;
-        right: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .btn {
+          padding: 12px 45px;
+          font-size: 80px;
+          font-weight: 700;
+          margin-top: 30px;
+          cursor: pointer;
+          color: #ffff;
+          background-color: #8e0a0a;
+          border-radius: 20px;
+          border: 1px solid #0a1064;
+          text-decoration: none;
+          transition: ease 0.3s;
+          width: 800px;
+          height: 200px;
+          bottom: 40px;
+          right: 20px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
 
-      .btn:hover {
-        background-color: #000;
-        color: #fff;
-        border-color: #fff;
-      }
+        .btn:hover {
+          background-color: #000;
+          color: #fff;
+          border-color: #fff;
+        }
 
-      .btn::after {
-        content: "\f178";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        margin-left: 5px;
-      }
+        .btn::after {
+          content: "\f178";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          margin-left: 5px;
+        }
 
-      img {
-        width: 100%;
-        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
-    }
 
       @media only screen and (max-width: 600px) {
         .container {
@@ -268,16 +278,16 @@
         .btn-container {
           justify-content: center;
           margin-top: 20px;
+        }
 
-          .btn {
-            font-size: 16px; /* Örneğin, butonun küçültülmüş font boyutu */
-            width: 160px; /* Örneğin, butonun küçültülmüş genişliği */
-            height: 48px; /* Örneğin, butonun küçültülmüş yüksekliği */
-          }
+        .btn {
+          font-size: 16px; /* Örneğin, butonun küçültülmüş font boyutu */
+          width: 160px; /* Örneğin, butonun küçültülmüş genişliği */
+          height: 48px; /* Örneğin, butonun küçültülmüş yüksekliği */
+        }
 
-          .content li {
-            font-size: 16px; /* Örneğin, yazıların küçültülmüş font boyutu */
-          }
+        .content li {
+          font-size: 16px; /* Örneğin, yazıların küçültülmüş font boyutu */
         }
       }
     </style>
@@ -290,7 +300,7 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#">ANASAYFA</a></li>
+          <li><a href="index.html">ANASAYFA</a></li>
           <li><a href="#">HAKKINDA</a></li>
           <li><a href="#">İLETİŞİM</a></li>
           <li>
@@ -336,8 +346,19 @@
           </p>
         </ul>
       </div>
-      <div class="buton">
-        <a href="urun.resimleri.html" class="btn"> Ürünleri Gör </a>
+      <div class="btn-container">
+        <a href="cimento.html" class="btn">
+          Çimento Sektöründeki Ürünleri Gör
+        </a>
+        <a href="demir-celik.html" class="btn">
+          Demir-Çelik Sektöründeki Ürünleri Gör
+        </a>
+        <a href="enerji.html" class="btn">
+          Enerji ve Denizcilik Sektöründeki Ürünleri Gör
+        </a>
+        <a href="maden.html" class="btn">
+          Maden ve Makina Sektöründeki Ürünleri Gör
+        </a>
       </div>
     </div>
   </body>
