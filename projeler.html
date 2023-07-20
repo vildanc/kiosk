@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Projeler</title>
+    <style>
+      body {
+        margin: 25px 40px;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(27, 43, 129);
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .left {
+        width: 50%;
+        text-align: center;
+      }
+
+      .home {
+        padding: 20px;
+      }
+
+      .home h1 {
+        font-size: 35px;
+        color: #efe1e1;
+        margin-top: 3px;
+        margin-bottom: 2px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content p {
+        font-size: 20px;
+        color: #efe1e1;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+
+      .list {
+        padding: 20px;
+        text-decoration: none;
+        margin-top: 0px;
+      }
+
+      .list ul {
+        padding-left: 0;
+      }
+
+      .list li {
+        text-align: left;
+      }
+
+      .list ul li {
+        font-size: 20px;
+        color: #c2b1b1;
+      }
+
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hex-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .big-hexagon {
+        position: relative;
+        width: 300px;
+        height: 346.41px;
+        background-color: #b61919; /* İstediğiniz arka plan rengini buradan ayarlayabilirsiniz */
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        overflow: hidden;
+      }
+
+      .hex-row {
+        display: flex;
+        width: 100%;
+        height: 33.33%;
+      }
+
+      .hex-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      .hex-column img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .expanded-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        max-width: 90%;
+        max-height: 90%;
+      }
+      .transparent-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9998;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /*! Header Start */
+      .header .logo img {
+        height: 5rem;
+      }
+      .header {
+        background-color: rgb(145, 11, 11);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+        margin: 2rem 7%;
+        border-radius: 30rem;
+        box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .header .navbar a {
+        margin: 0 1rem;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        transition: ease 0.5s;
+      }
+
+      .header .navbar a:hover {
+        color: #000;
+      }
+      .header .buttons button {
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: 2rem;
+        background-color: transparent;
+      }
+
+      /*! Header End */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="./index.html">Anasayfa</a>
+        <a href="./hakkinda.html">Hakkında</a>
+        <a href="./iletisim.html">İletşim</a>
+      </nav>
+      <div class="buttons">
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Navbar End -->
+    <div class="container">
+      <div class="left">
+        <div class="home">
+          <h1>Anahtar teslim projelerimizle sizlere çözümler sunuyoruz.</h1>
+        </div>
+        <div class="content">
+          <p>
+            Kardökmak A.Ş. olarak deneyimli çalışan kadromuzla dünyanın farklı
+            noktalarında çimento tesisleri, waelz tesisleri, gübre fabrikaları
+            ve bakır tesisleri gibi anahtar teslim projeler üstlenmekteyiz.
+            Müşteri memnuniyeti ve kaliteyi ön planda tutarak siz değerli
+            müşterilerimize çözümler sunuyoruz.
+          </p>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              Kardökmak A.Ş. olarak müşterilerimizin taleplerine uzun yıllara
+              dayanan tecrübe ve birikimimizle çözümler sunmaktayız.
+              Projelerimizi sürdürülebilirlik, üretkenlik ve optimizasyon
+              kavramlarıyla yürütmekteyiz.
+            </li>
+            <li>
+              Önceliğimiz dünyanın her noktasında müşterilerimizin taleplerine
+              hızlı ve sürdürülebilir çözümler sunmak.
+            </li>
+            <li>
+              Bu bağlamda tecrübeli kadrosu ve bilgi birikimiyle yürüttüğümüz
+              projelerimizle siz değerli müşterilerimizi bir adım daha ileri
+              taşımayı hedeflemekteyiz.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="hex-container">
+          <div class="hexagon big-hexagon">
+            <div class="hex-row">
+              <div class="hex-column">
+                <img src="./images/projeler.png" alt="Resim 1" />
+              </div>
+              <div class="hex-column">
+                <img src="./images/projeler.png" alt="Resim 2" />
+              </div>
+            </div>
+            <div class="hex-row">
+              <div class="hex-column">
+                <img src="./images/projeler.png" alt="Resim 3" />
+              </div>
+              <div class="hex-column">
+                <img src="./images/projeler.png" alt="Resim 4" />
+              </div>
+            </div>
+            <div class="hex-row">
+              <div class="hex-column">
+                <img src="./images/home.jpg" alt="Resim 5" />
+              </div>
+              <div class="hex-column">
+                <img src="./images/projeler.png" alt="Resim 6" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <script src="script.js"></script>
+  </body>
+</html>
