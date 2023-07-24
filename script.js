@@ -23,3 +23,4 @@ function expandImage(event) {
     wrapper.addEventListener("click", expandImage);
   });
   
+

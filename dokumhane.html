@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dökümhane</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,16,112,1) 34%, rgba(0,212,255,1) 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 950px;
+            margin: 15px auto;
+            padding: 20px;
+            border: 2px solid #cf1010;
+            background-color: #c22525;
+        }
+
+        .main-box {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 5px;
+        }
+
+        .image-box {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .image {
+            width: 200px;
+            height: 150px;
+            background-size: cover;
+            border: 2px solid rgb(27, 43, 129);;
+            flex: 1;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .paragraph {
+            text-align: justify;
+        }
+            
+           /*! Header Start */
+           .header .logo img {
+             height: 5rem;
+           }
+           .header {
+             background-color: rgb(145, 11, 11);
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             padding: 0 3%;
+             margin: 2rem 7%;
+             border-radius: 30rem;
+             box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+             position: sticky;
+             top: 0;
+             z-index: 1000;
+             margin-bottom: 5px;
+           }
+      
+           .header .navbar a {
+             margin: 0 1rem;
+             font-size: 25px;
+             color: #fff;
+             text-decoration: none;
+             transition: ease 0.5s;
+           }
+      
+           .header .navbar a:hover {
+             color: #000;
+           }
+           .header .buttons button {
+             cursor: pointer;
+             font-size: 30px;
+             margin-left: 2rem;
+             background-color: transparent;
+           }
+
+    </style>
+</head>
+    <body>
+        <!-- Navbar Start -->
+        <header class="header">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <nav class="navbar">
+            <a href="./index.html">Anasayfa</a>
+            <a href="./hakkinda.html">Hakkında</a>
+            <a href="./iletisim.html">İletşim</a>
+          </nav>
+          <div class="buttons">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </header>
+        <!-- Navbar End -->
+            <div class="container">
+              <div class="main-box">
+                  <div class="title"> Dökümhane</div>
+                  <div class="paragraph">
+                      <p>Kardökmak A.Ş. dökümhanesi 26.536 m² kapalı alanı ve yıllık 15.000 tonluk kurulu kapasitesi ile Türkiye ‘deki en büyük dökümhanelerden biridir ve çok çeşitli ürün yelpazesi ile hem kamu hem de özel sektörün ihtiyaçlarını karşılamaktadır. Dökümhanemiz modelhane, kalıp sahası, tav fırınları ve 70 yılı aşkın tecrübesiyle hizmet vermektedir.</p>
+                      <p>Kardökmak A.Ş bünyesinde bulunan modelhanede ahşap, strafor ve pik model imalatı yapılabilmektedir.</p>
+                      <p>70 yıldan fazla tecrübeyle birlikte 15 bini aşkın model özel korumalı stok ambarında saklanmaktadır.</p>
+                      <p>Modelleme için kullanılan 5 eksen CNC'ler sayesinde kısa sürede hem kailteli hem de maliyet avantajı sağlayan modeller üretmektedir.</p>
+                      <p>Cevherden imal edilen, vakumdan geçirilmiş sıvı maden kalitesi ile Türkiye'deki tek üretici durumundadır.</p>
+                      <p>Kardökmak A.Ş net 200 tona kadar çelik döküm kapasitesi ile Türkiye'nin en büyük çelik dökümhanesidir.</p>
+                      <p>Kardökmak bünyesinde bulunan ısıl işlem fırınları ile dökümü yapılan parçalara normalize, temperleme, gerilim giderme uygulamaktadır.</p>
+                  </div>
+              </div>
+              <div class="image-box">
+                  <div class="image" style="background-image: url('./images/üniteler.jpg');"></div>
+                  <div class="image" style="background-image: url('./images/ürünler.jpg');"></div>
+                  <div class="image" style="background-image: url('./images/ürünler.jpg');"></div>
+                  <div class="image" style="background-image: url('./images/ürünler.jpg');"></div>
+              </div>
+          </div>
+      </body>
+      </html>
