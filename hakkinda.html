@@ -19,76 +19,107 @@
      
      .container {
        display: flex;
-     }
-     
-     .left, .right{
-       width: 50%;
-       padding: 15px;
-       display: flex;
-       flex-direction: column;
        align-items: center;
        justify-content: center;
      }
      
+      .warpper{
+        display:flex;
+        flex-direction: column;
 
-     .left p  {
-        text-align: center;
-       font-size: 25px;
-       margin-top: 0;
-       margin-bottom: 10px;
-       padding: 20px;
-       color:#fff;
-     }
-
-     .left h2 {
-        color: #fff;
-        font-size: 15px;
-        text-align: center;
-     }
-
-     .left h3 {
-        color: #fff;
-        font-size: 13px;
-        text-align: left;
-        margin-top: 0px;
-     }
-
-     .right p {
-        text-align: center;
-        font-size: 25px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+      }
+      .tab{
+        font-size: 20px;
+        cursor: pointer;
+        padding:10px 20px;
+        margin:0px 2px;
+        background:#000;
+        display:inline-block;
         color:#fff;
+        border-radius:3px 3px 0px 0px;
+        box-shadow: 0 0.5rem 0.8rem #00000080;
 
-     }
+      }
+      .panels{
+        background:#fffffff6;
+        box-shadow: 0 2rem 2rem #00000080;
+        min-height:200px;
+        width:800px;
+        height: 400px;
+        border-radius:3px;
+        overflow:hidden;
+        padding:20px;  
+        justify-content: center;
+        align-items: center;
+      }
+      .panel{
+        display:none;
+        animation: fadein .8s;
 
-   
-     .left img {
-        width: 450px;
-        height: 200px;
-        margin-bottom: 0px;
-        margin-top: 10px;
-     }
 
-     .right img {
+      }
+      @keyframes fadein {
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+
+      #one-panel img{
         width: 550px;
-        height: 250px;
-        margin-bottom: 60px;
-        margin-top: 0px;
-     }
+        height: 200px;
+        padding: 20px;
+        justify-content: center;
+      }
 
-      /*! Header Start */
-      .header .logo img {
-        height: 5rem;
+      #two-panel img{
+        width: 750px;
+        height: 270px;
+        padding: 20px;
+      }
+
+      #three-panel img{
+        width: 400px;
+        height: 250px;
+      }
+
+      p {
+        font-size: 20px;
+        color:#000;
       }
       
+      .radio{
+        display:none;
+      }
+      #one:checked ~ .panels #one-panel,
+      #two:checked ~ .panels #two-panel,
+      #three:checked ~ .panels #three-panel{
+        display:block
+      }
+      #one:checked ~ .tabs #one-tab,
+      #two:checked ~ .tabs #two-tab,
+      #three:checked ~ .tabs #three-tab{
+        background:#fffffff6;
+        color:#000;
+        border-top: 3px solid #000;
+      }
+  /*! Header Start */
+  .header .logo img {
+        height: 5rem;
+        margin-right: 600px;
+      }
       .header {
         background-color: rgb(145, 11, 11);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 3%;
-        margin: 2rem 7%;
+        padding: 0 50px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 10px;
         border-radius: 30rem;
         box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
         position: sticky;
@@ -98,10 +129,18 @@
 
       .header .navbar a {
         margin: 0 1rem;
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
         text-decoration: none;
         transition: ease 0.5s;
+      }
+
+      .header .btnn a {
+        margin-left: -10px;
+        font-size: xx-large;
+        color: #fff;
+        position: relative;
+        top: 5px; 
       }
 
       .header .navbar a:hover {
@@ -116,36 +155,55 @@
 
       /*! Header End */
     </style>
-  </head>
-  <body>
-     <!-- Navbar Start -->
+</head>
+    <body>
+    <!-- Navbar Start -->
     <header class="header">
-      <a href="./index.html" class="logo">
+      <div class="btnn">
+        <a href="./index.html"
+          ><i class="fa-solid fa-arrow-left" style="font-size: larger"></i
+        ></a>
+      </div>
+      <a href="index.html" class="logo"> 
         <img src="./images/logo.png" alt="logo" />
       </a>
       <nav class="navbar">
-        <a href="./index.html">Anasayfa</a>
-        <a href="./hakkinda.html">Hakkında</a>
-        <a href="./iletisim.html">İletşim</a>
+          <a href="./index.html">Anasayfa</a>
+          <a href="./hakkinda.html">Hakkında</a>
+          <a href="./index.html">Ürünler</a>
+          <a href="./index.html">Üniteler</a>
+          <a href="./iletisim.html">İletşim</a>
       </nav>
-      <div class="buttons">
-        <button>
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
+    </div>
     </header>
     <!-- Navbar End -->
     <div class="container">
-        <div class="left">
-          <p>Yaklaşık 100 yıl önce Anadolu topraklarının bize verdiği sorumlulukla Türkiye’de bir çok farklı sektörde iş ortaklığı yapan firmamız Türkiye’nin iskanında büyük bir paya sahip olup bu topraklarda bir medeniyetin teknolojik açıdan refaha ulaşması için çalışmıştır. Tarihin bize verdiği bu misyonla geçmişte olduğu gibi şimdide bir medeniyeti daha ileri taşımak adına geleceğimizi planlıyoruz.</p>
-          <img src="./images/ataturk.jpeg" alt="Sol Resim">
-          <h2>"Siyasi ve askeri zaferler ne kadar büyük olursa olsun, ekonomik zaferlerle donatılmadıkça verimli sonuç alınamaz."</h2>
-          <h3>Mustafa Kemal Atatürk</h3>
+      <div class="warpper">
+        <input class="radio" id="one" name="group" type="radio" checked>
+        <input class="radio" id="two" name="group" type="radio">
+        <input class="radio" id="three" name="group" type="radio">
+        <div class="tabs">
+        <label class="tab" id="one-tab" for="one">Hakkında</label>
+        <label class="tab" id="two-tab" for="two">Tarihçe</label>
+        <label class="tab" id="three-tab" for="three">+</label>
+          </div>
+        <div class="panels">
+        <div class="panel" id="one-panel">
+          <div class="panel-title"></div>
+          <p>Geçmişten  bugüne dek gelen tecrübe ve bilgimizle değerli müşterilerimize Dünya’nın her yerinde çözümler üretmek ve daha sürdürülebilir bir Dünya için çalışıyoruz. Sadece mekanik parça imalatı değil anahtar teslim projelerle müşterilerimizin taleplerini Dünya’nın her noktasında karşılamaktayız. Çözümlerimizle enerji, maden, çimento ve demir çelik sektörü gibi birçok farklı sektöre hizmetler sağlamaktayız.</p>
+          <img src="./images/ataturk.jpeg" alt="resim">
         </div>
-        <div class="right">
-            <img src="./images/tarihçe1.png" alt="Sağ Resim">
-            <p>Amacımızı hep iyi daima ileri felsefesiyle her zaman en iyi çözümleri sunmak, sınırları aşarak Dünya’nın her noktasına hizmet sağlamak ve gelecek nesillere daha sürdürülebilir bir Dünya bırakmaktır. Kaynakların kısıtlı olmasının bilinciyle daha iyi bir gelecek için daha iyi bir çevre anlayışıyla hareket ediyoruz.</p> 
+        <div class="panel" id="two-panel">
+          <div class="panel-img"></div>
+          <img src="./images/tarihçe.png" alt="resim">
+        </div>
+        <div class="panel" id="three-panel">
+          <div class="panel-title"></div>
+          <p>Yaklaşık 100 yıl önce Anadolu topraklarının bize verdiği sorumlulukla Türkiye’de bir çok farklı sektörde iş ortaklığı yapan firmamız Türkiye’nin iskanında büyük bir paya sahip olup bu topraklarda bir medeniyetin teknolojik açıdan refaha ulaşması için çalışmıştır. Tarihin bize verdiği bu misyonla geçmişte olduğu gibi şimdide bir medeniyeti daha ileri taşımak adına geleceğimizi planlıyoruz.</p>
+          <img src="./images/tarihh.png" alt="">
+        </div>
         </div>
       </div>
+      
 </body>
 </html>
