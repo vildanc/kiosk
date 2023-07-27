@@ -54,7 +54,7 @@
 
   /*! Header Start */
   .header .logo img {
-        height: 5rem;
+        height: 4rem;
         margin-right: 600px;
       }
       .header {
@@ -76,7 +76,7 @@
 
       .header .navbar a {
         margin: 0 1rem;
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
         text-decoration: none;
         transition: ease 0.5s;
@@ -101,6 +101,27 @@
       }
 
       /*! Header End */
+     /* Add a media query for smaller screens */
+     @media only screen and (max-width: 768px) {
+      body {
+        margin: 10px;
+      }
+
+      .content img {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+      }
+
+      .map {
+        max-width: 100%;
+        margin: 0;
+      }
+
+      .header .logo img {
+        margin-right: 10px;
+      }
+    }
     </style>
 </head>
     <body>
@@ -117,8 +138,8 @@
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>

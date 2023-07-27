@@ -10,12 +10,19 @@
     />
     <title>Projeler</title>
     <style>
-      body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100vh;
-}
+    body {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     height: 100vh;
+     background-image: url(./images/projeler3.JPG);
+     background-size: 45% cover;
+     background-repeat: no-repeat;
+     background-position: top center;
+     background-size: cover;
+     position: relative;
+    }
+
 
 /* Arka plan bölümünü ayarlayan stil */
 .container {
@@ -25,17 +32,15 @@
 }
 
 .upper-bg {
-    height: 50%;
     flex: 1;
-    background-image: url(./images/üniteler.jpg);
-    background-size: cover;
-    background-position: center;
+    
+    
+    z-index: -1;
 }
 
 .lower-bg {
-    height: 50%;
     flex: 1;
-    background-color: #ffffff; /* İstediğiniz alt arka plan rengi */
+    background-color: #210d46; /* İstediğiniz alt arka plan rengi */
     display: flex;
 
 }
@@ -48,7 +53,7 @@
     height: 400px;
     text-align: center;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -110,6 +115,29 @@ p {
       }
 
       /*! Header End */
+      @media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .center-box {
+                width: 80%;
+                max-width: 400px;
+            }
+            .header .logo img {
+                height: 3.5rem;
+                margin-right: 1rem;
+            }
+            .header .navbar a {
+                font-size: 16px;
+            }
+            .header .btnn a {
+                font-size: 20px;
+            }
+          }
     </style>
 </head>
     <body>
@@ -126,8 +154,8 @@ p {
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>
@@ -135,7 +163,7 @@ p {
     <!-- Navbar End -->
     <div class="container">
       <div class="upper-bg">
-          <!-- Resim burada olacak -->
+ 
       </div>
       <div class="lower-bg">
           <div class="center-box">

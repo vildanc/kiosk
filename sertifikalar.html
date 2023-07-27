@@ -122,6 +122,43 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9998;
 }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .header .logo img {
+                height: 4rem;
+                margin-right: 20px;
+            }
+
+            .header {
+                padding: 0 20px;
+                margin-left: 0;
+            }
+
+            .header .navbar a {
+                font-size: 16px;
+            }
+
+            .header .btnn a {
+                font-size: medium;
+            }
+
+            .header .buttons button {
+                font-size: 16px;
+                margin-left: 0.25rem;
+            }
+
+            .images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .scroll-container {
+                max-height: 300px;
+            }
+        }
     </style>
   </head>
   <body>
@@ -138,13 +175,14 @@
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>
     </header>
     <!-- Navbar End -->
+    <div class="scroll-container">
         <div class="images">
           
         </div>
@@ -172,8 +210,8 @@
                onclick="enlargeImage(this.src)">
                <img src="./images/sertifikalar/sertifika10.png" alt="Resim 1" onmouseover="this.style.transform = 'scale(1.1)'" onmouseout="this.style.transform = 'scale(1)'"
                onclick="enlargeImage(this.src)">
-        </div>
-        <div class="overlay"></div>
+       </div>
+        <div class="overla y"></div>
         <script src="script.js"></script>
   </body>
 </html>

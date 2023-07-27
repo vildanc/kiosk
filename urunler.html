@@ -8,7 +8,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Projeler</title>
+    <title>Ürünler</title>
     <style>
 body {
     margin: 0;
@@ -53,42 +53,51 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #e1d8d8;
+    /* Set the background color with transparency */
+    background-color: rgba(225, 216, 216, 0.6); /* Use rgba with alpha value for transparency */
 }
-
-.box.active {
-    opacity: 2;
+  .box.active {
+    opacity: 100%; /* Change opacity from 2 to 1 to avoid exceeding 100% */
     pointer-events: auto;
-}
+  }
 
-.image-container {
-    width: 100%;
-    height: 25%;
-    overflow: hidden;
-}
-
-.box img {
+  .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+    left: 0;
+    /* Apply a higher z-index to the image so it's behind the text */
+    z-index: -1;
+  }
+
+.image-container {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
 
 .info-box {
     width: 100%;
-    height: 75%;
+    height: 100%;
     padding: 10px;
-    text-align: center;
-}
+    text-align: center; /* Center the content horizontally */
+    background-color: rgba(50, 48, 48, 0.8); /* Use rgba with alpha value for transparency */
+  }
 
-.info-box h1{
-  font-size: 27px;
+  .info-box h1 {
+    color: #fff;
+    font-size: 27px;
+  }
 
-} 
-
-.info-box p {
+  .info-box p {
+    color: #fff;
     margin: 5px;
     font-size: 20px;
-}
+  }
 
 
 
@@ -114,12 +123,11 @@ body {
     }
 
 .buttons {
-    margin-top: 5px;
     display: flex;
     align-items: end;
     justify-content: center;
     position: absolute;
-    bottom: 85px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -127,21 +135,21 @@ body {
 }
 
 .buttons button {
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .buttons button.back-btn {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
   /*! Header Start */
   .header .logo img {
@@ -192,6 +200,32 @@ body {
       }
 
       /*! Header End */
+              /* Media Queries */
+              @media only screen and (max-width: 768px) {
+            /* Styles for small screens */
+            .box {
+                width: 75%;
+                height: auto;
+                margin: 10px 0;
+                max-width: none;
+            }
+            .buttons {
+                bottom: 20px;
+            }
+            .header {
+                padding: 0 5px;
+            }
+            .header .navbar a {
+                font-size: 16px;
+            }
+            .header .btnn a {
+                font-size: large;
+            }
+            .buttons button {
+                font-size: 16px;
+                margin-left: 1rem;
+            }
+        }
     </style>
 </head>
     <body>
@@ -208,8 +242,8 @@ body {
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>

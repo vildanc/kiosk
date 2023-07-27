@@ -115,6 +115,41 @@
       }
 
       /*! Header End */
+              /*! Header End */
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            /* Styles for small screens */
+            .container {
+                flex-direction: column; 
+                align-items: center;
+            }
+
+            .left-button,
+            .right-button {
+                width: 100%; 
+                max-width: none;
+                height: auto; 
+                margin-bottom: 10px;
+            }
+
+            .header .logo img {
+                margin-right: 10px;
+            }
+
+            .header .navbar a {
+                font-size: 14px; 
+            }
+
+            .header .btnn a {
+                font-size: medium;
+            }
+
+            .header .buttons button {
+                font-size: 16px; 
+                margin-left: 0.5rem; 
+            }
+        }
     </style>
 </head>
     <body>
@@ -131,8 +166,8 @@
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>

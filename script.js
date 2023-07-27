@@ -1,4 +1,9 @@
 
+function toggleNav() {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("show-nav");
+}
+
 ;const boxes = document.querySelectorAll('.box');
 const backBtn = document.querySelector('.back-btn');
 const nextBtn = document.querySelector('.next-btn');

@@ -105,6 +105,21 @@
       }
 
       /*! Header End */
+    /* Media query for small screens (max-width: 768px) */
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px; /* Reduce margin on small screens */
+      }
+
+      .left,
+      .right {
+        max-width: 100%; /* Take full width on small screens */
+      }
+
+      h1 {
+        font-size: 30px; /* Reduce font size on small screens */
+      }
+    }
     </style>
 </head>
     <body>
@@ -121,8 +136,8 @@
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>
