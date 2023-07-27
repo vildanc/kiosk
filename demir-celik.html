@@ -99,6 +99,50 @@
       }
 
       /*! Header End */
+          /* Media queries */
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-images,
+      .center-images,
+      .right-images {
+        margin: 5px;
+      }
+
+      .header .logo img {
+        height: 4rem;
+        margin-right: 0;
+      }
+
+      .header .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(145, 11, 11);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+      }
+
+      .header .navbar a {
+        margin: 10px;
+      }
+
+      .header .btnn a {
+        margin-left: 10px;
+        font-size: larger;
+        color: #fff;
+        position: relative;
+        top: 5px;
+      }
+
+      .header .navbar.active {
+        display: flex;
+      }
+    }
     </style>
 </head>
     <body>
@@ -115,8 +159,8 @@
       <nav class="navbar">
           <a href="./index.html">Anasayfa</a>
           <a href="./hakkinda.html">Hakkında</a>
-          <a href="./index.html">Ürünler</a>
-          <a href="./index.html">Üniteler</a>
+          <a href="./urunler.html">Ürünler</a>
+          <a href="./uniteler.html">Üniteler</a>
           <a href="./iletisim.html">İletşim</a>
       </nav>
     </div>
